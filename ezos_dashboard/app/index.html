@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Ezos Online Dashboard</title>
+
+</head>
+
+<body onload="App.LoadloginData()">
+    <!-- page-header -->
+    <div class="page-header divider">
+            <img src="./app/images/header.png" id="header-img">
+    </div>
+    <!-- /.page-header-->
+    <!-- news -->
+    <div class="card-section">
+        <div class="container">
+            <div class="card-block bg-white mb30">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <!-- section-title -->
+                        <div class="section-title mb-0">
+                            <h2>Your Ezos address:</h2>
+                            <h2 id="text-login-msg" class="address">0x0294082390482482903849023849234924</h2>
+                        </div>
+                        <!-- /.section-title -->
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <!-- section-title -->
+                        <div class="section-title mb-0">
+                            <h5 class="subheader">Masternode Status:</h5>
+                            <span id="masternodeLabel" class="label label-danger">Masternode disabled</span>
+                            <!--<span class="label label-success">Masternode enabled</span>-->
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <!-- section-title -->
+                        <div class="section-title mb-0">
+                            <h5 class="subheader">Current balance:</h5>
+                            <h5 id="userBlance" class="header-info">0 Ezos</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                        <!-- section-title -->
+                        <div class="section-title mb-0">
+                            <h5 class="subheader">Claimable Ezos:</h5>
+                            <h5 id="unclaimedEzos" class="header-info">0 Ezos</h5>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="card-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                    <div class="card-block bg-white mb30">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3>Ezos overview:</h3>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <!-- section-title -->
+                                <div class="section-title mb-0">
+                                    <h5 class="subheader">Ezos contract on etherscan:</h5>
+                                    <h5 class="contractAddr"><a href="https://rinkeby.etherscan.io/address/0xeedafd54622b805543f207f7d60731413ff11181">0xeedafd54622b805543f207f7d60731413ff11181</a></h5>
+                                    <br>
+                                    <h5 class="subheader">Current mining reward:</h5>
+                                    <h5 id="miningReward">0 Ezos</h5>
+                                    <br>
+                                    <h5 class="subheader">Current masternode reward:</h5>
+                                    <h5 id="masterNodeReward">0%</h5>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <!-- section-title -->
+                                <div class="section-title mb-0">
+                                    <h5 class="subheader">Total supply:</h5>
+                                    <h5>21000000 Ezos</h5>
+                                    <br>
+                                    <h5 class="subheader">Remaining mineable Ezos:</h5>
+                                    <h5 id="miningSupply">0 Ezos</h5>
+                                    <br>
+                                    <h5 class="subheader">Remaining stakeable Ezos:</h5>
+                                    <h5 id="masterNodeSupply" class="even-out">0 Ezos</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12" id="pad-col">
+                    <div class="card-block bg-white mb30">
+                        <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h3>Your actions:</h3>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <!-- section-title -->
+                                <p>
+                                    <a onclick="App.claimEzos()" class="btn btn-outlined btn-theme btn-sm" id="your-actions-btn" data-wow-delay="0.7s">Claim Ezos</a>
+                                </p>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <!-- section-title -->
+                                <p>
+                                    <a class="btn btn-outlined btn-theme btn-sm" id="your-actions-btn" data-wow-delay="0.7s" data-toggle="modal" data-target="#exampleModal">Public Mine</a>
+                                </p>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <!-- section-title -->
+                                <p>
+                                    <a onclick="App.registerMasternodeCall()" class="btn btn-outlined btn-theme btn-sm" id="your-actions-btn" data-wow-delay="0.7s">Register Masternode</a>
+                                </p>
+                            </div>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Public mine settings</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Please chose if you want to use the secure public mine version or want to take the risk:</p>
+                    <div class="funkyradio">
+                        <div class="funkyradio-primary">
+                            <input type="radio" name="radio" id="radio1" unchecked/>
+                            <label for="radio1">Secure mining</label>
+                        </div>
+                        <div class="funkyradio-primary">
+                            <input type="radio" name="radio" id="radio2" checked/>
+                            <label for="radio2">Risky mining</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outlined btn-theme btn-sm">Public mine</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

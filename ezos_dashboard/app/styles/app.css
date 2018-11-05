@@ -1,0 +1,415 @@
+body {
+    text-rendering: optimizeLegibility;
+    font-family: 'Overpass', sans-serif;
+    letter-spacing: 0px;
+    font-size: 17px;
+    color: white;
+    font-weight: 400;
+    line-height: 32px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#85f7f5+0,73d1d6+11,7db9e8+29,207cca+52,207cca+76,1e5799+100 */
+background: #021a32; 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#85f7f5', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
+}
+
+#header-img{
+    margin-top: -60px;
+}
+
+.bg-white{
+    background-color: black !important;
+}
+
+.contractAddr{
+  font-size: 0.7rem !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white !important;
+    margin: 0px 0px 10px 0px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.7;
+}
+
+p:last-child {
+    margin: 0px;
+}
+
+ul,
+ol {}
+
+a {
+    text-decoration: none;
+    color: #8d8f90;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: #f85759;
+}
+
+.even-out{
+    margin-bottom: 15px !important;
+}
+
+.page-header {
+    position: relative;
+    background-size: cover;
+}
+
+.page-caption {
+    padding-top: 170px;
+    padding-bottom: 174px;
+}
+
+.page-title {
+    font-size: 46px;
+    line-height: 1;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-section {
+    position: relative;
+    bottom: 60px;
+}
+
+.card-block {
+    padding: 80px;
+}
+
+.section-title {
+    margin-bottom: 60px;
+}
+
+.label-danger {
+    background-color: #d9534f;
+}
+
+.label-success {
+    background-color: #1db2b0;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.subheader{
+    font-weight: 800;
+}
+
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+/*********************  BUTTON ***********************/
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+
+.btn {
+	letter-spacing: 1px;
+	text-decoration: none;
+	background: none;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+	font-size:14px;
+	line-height:20px;
+	font-weight:700;
+	text-transform:uppercase;
+	border: 3px solid;
+	padding:8px 20px;
+}
+
+.btn-outlined {
+    border-radius: 0;
+    -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+            transition: all 0.3s;
+}
+
+.btn-outlined.btn-theme {
+    background: none;
+    color: #0b3f67;
+	border-color: white;
+}
+
+.btn-outlined.btn-theme:hover,
+.btn-outlined.btn-theme:active {
+    color: black !important;
+    background: white;
+    border-color: white;
+}
+
+.btn-outlined.btn-black {
+    background: none;
+    color: #000000;
+	border-color: #000000;
+}
+
+.btn-outlined.btn-black:hover,
+.btn-outlined.btn-black:active {
+    color: #FFF;
+    background: #000000;
+    border-color: #000000;
+}
+
+.btn-outlined.btn-white {
+    background: none;
+    color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-outlined.btn-white:hover,
+.btn-outlined.btn-white:active {
+    color: #0b3f67;
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+.btn-xs{
+	font-size:11px;
+	line-height:14px;
+	border: 1px solid;
+	padding:5px 10px;
+}
+
+.btn-sm{
+	font-size:12px;
+	line-height:16px;
+	border: 2px solid;
+	padding:8px 15px;
+}
+
+.btn-lg{
+	font-size:18px;
+	line-height:22px;
+	border: 4px solid;
+	padding:13px 40px;
+}
+
+#your-actions-btn{
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+}
+
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+/*******************  BUTTON END *********************/
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+
+.header-info{
+    padding-top: 10px;
+}
+
+@media (max-width: 414px){
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h2.address{
+        font-size: 0.8rem !important;
+    }
+    .btn-sm{
+	font-size:10px !important;
+	line-height:22px;
+	border: 4px solid;
+	padding:13px 40px;
+}
+    #pad-col{
+        padding-top: 30px !important;
+    }
+
+}
+
+@media (max-width: 1024px){
+    .btn-sm{
+    font-size:7px !important;
+	line-height:22px;
+	border: 4px solid;
+	padding:13px 40px;
+    }
+}
+
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+/*************************  MDOAL ********************/
+/*****************************************************/
+/*****************************************************/
+/*****************************************************/
+
+.funkyradio div {
+  clear: both;
+  overflow: hidden;
+}
+
+.funkyradio label {
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4;
+  font-weight: normal;
+}
+
+.funkyradio input[type="radio"]:empty,
+.funkyradio input[type="checkbox"]:empty {
+  display: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label,
+.funkyradio input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 3.25em;
+  margin-top: 1em;
+margin-bottom: 1em;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.funkyradio input[type="radio"]:empty ~ label:before,
+.funkyradio input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 2.5em;
+  background: #D1D3D4;
+  border-radius: 3px 0 0 3px;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #888;
+}
+
+.funkyradio input[type="radio"]:hover:not(:checked) ~ label:before,
+.funkyradio input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #C2C2C2;
+}
+
+.funkyradio input[type="radio"]:checked ~ label,
+.funkyradio input[type="checkbox"]:checked ~ label {
+  color: #777;
+}
+
+.funkyradio input[type="radio"]:checked ~ label:before,
+.funkyradio input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio input[type="radio"]:focus ~ label:before,
+.funkyradio input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+
+.funkyradio-default input[type="radio"]:checked ~ label:before,
+.funkyradio-default input[type="checkbox"]:checked ~ label:before {
+  color: #333;
+  background-color: #ccc;
+}
+
+.funkyradio-primary input[type="radio"]:checked ~ label:before,
+.funkyradio-primary input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #337ab7;
+}
+
+.funkyradio-success input[type="radio"]:checked ~ label:before,
+.funkyradio-success input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+.funkyradio-danger input[type="radio"]:checked ~ label:before,
+.funkyradio-danger input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #d9534f;
+}
+
+.funkyradio-warning input[type="radio"]:checked ~ label:before,
+.funkyradio-warning input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #f0ad4e;
+}
+
+.funkyradio-info input[type="radio"]:checked ~ label:before,
+.funkyradio-info input[type="checkbox"]:checked ~ label:before {
+  color: #fff;
+  background-color: #5bc0de;
+}
+
+#btn-modal{
+    color: black;
+}
